@@ -1,0 +1,12 @@
+{
+  "name": "resume-typesetter",
+  "version": "1.0.0",
+  "description": "Manage a resume as JSON Resume schema data and render it with custom Typst templates. Onboard, iterate, fork variants, and version.",
+  "author": {
+    "name": "Daniel Rosehill",
+    "url": "https://github.com/danielrosehill"
+  },
+  "repository": "https://github.com/danielrosehill/Resume-Typesetter",
+  "license": "MIT",
+  "keywords": ["resume", "cv", "typst", "json-resume", "typesetting"]
+}

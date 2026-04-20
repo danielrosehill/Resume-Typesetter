@@ -1,0 +1,48 @@
+{
+  "basics": {
+    "name": "Jane Doe",
+    "label": "Senior Software Engineer",
+    "email": "jane@example.com",
+    "phone": "+1 555 123 4567",
+    "url": "https://janedoe.dev",
+    "summary": "Backend engineer with 8 years of experience building distributed systems.",
+    "location": {
+      "city": "Berlin",
+      "region": "Berlin",
+      "countryCode": "DE"
+    },
+    "profiles": [
+      { "network": "GitHub", "username": "janedoe", "url": "https://github.com/janedoe" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Acme Corp",
+      "position": "Senior Software Engineer",
+      "startDate": "2022-03",
+      "endDate": null,
+      "summary": "Payments platform team.",
+      "highlights": [
+        "Led migration of monolith to event-driven microservices, cutting p99 latency by 40%.",
+        "Mentored three mid-level engineers through the promotion process."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Berlin",
+      "area": "Computer Science",
+      "studyType": "MSc",
+      "startDate": "2014-10",
+      "endDate": "2016-08"
+    }
+  ],
+  "skills": [
+    { "name": "Languages", "keywords": ["Go", "Python", "TypeScript"] },
+    { "name": "Infrastructure", "keywords": ["Kubernetes", "Terraform", "PostgreSQL"] }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Native" },
+    { "language": "German", "fluency": "Professional" }
+  ]
+}
