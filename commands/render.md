@@ -13,10 +13,10 @@ Render the resume to PDF.
 
 ## Steps
 
-1. **Load config** from `~/.claude/plugins/resume-typesetter/config.json` to get `dataRepo`. If missing, tell the user to run `/resume:onboard` first.
+1. **Resolve the plugin data directory** as `$CLAUDE_USER_DATA/resume-typesetter/` if `CLAUDE_USER_DATA` is set; otherwise `$XDG_DATA_HOME/claude-plugins/resume-typesetter/` if `XDG_DATA_HOME` is set; otherwise `~/.local/share/claude-plugins/resume-typesetter/`. See the canonical convention in the `meta-tools:plugin-data-storage` skill. **Load config** from `<plugin-data-dir>/config.json` to get `dataRepo`. If missing, tell the user to run `/resume:onboard` first.
 
 2. **Resolve inputs:**
-   - Template path: `<plugin-dir>/templates/<template>/template.typ`. The plugin directory is typically `~/.claude/plugins/resume-typesetter/` — discover it from the location of this command file if needed.
+   - Template path: `<plugin-install-dir>/templates/<template>/template.typ`. The plugin install directory is typically `~/.claude/plugins/cache/<marketplace>/resume-typesetter/` — discover it from the location of this command file if needed. (This is the install directory — read-only asset discovery, not user data.)
    - Data file: `<dataRepo>/data/variants/<variant>.json` if `$2` provided, else `<dataRepo>/data/resume.json`.
    - Validate both exist.
 

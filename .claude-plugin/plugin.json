@@ -1,6 +1,6 @@
 {
   "name": "resume-typesetter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Manage a resume as JSON Resume schema data and render it with custom Typst templates. Onboard, iterate, fork variants, and version.",
   "author": {
     "name": "Daniel Rosehill",
