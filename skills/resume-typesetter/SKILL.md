@@ -9,7 +9,7 @@ description: Shared reference for working with JSON Resume schema data and Typst
 
 - **Data**: a single `resume.json` file conforming to the [JSON Resume schema](https://jsonresume.org/schema/). Optional variants live under `data/variants/<name>.json`.
 - **Presentation**: Typst templates under `templates/<name>/template.typ`. Each template reads the JSON via `json(sys.inputs.resume)` — the path is passed at compile time with `--input resume=<path>`.
-- **Config**: `<plugin-data-dir>/config.json` stores `dataRepo` (absolute path to the user's resume data repo). The plugin data directory resolves as `$CLAUDE_USER_DATA/resume-typesetter/` if `CLAUDE_USER_DATA` is set; otherwise `$XDG_DATA_HOME/claude-plugins/resume-typesetter/` if `XDG_DATA_HOME` is set; otherwise `~/.local/share/claude-plugins/resume-typesetter/`. See the canonical convention in the `meta-tools:plugin-data-storage` skill.
+- **Config**: `<plugin-data-dir>/config.json` stores `dataRepo` (absolute path to the user's resume data repo). The plugin data directory resolves as `$CLAUDE_USER_DATA/resume-typesetter/` if `CLAUDE_USER_DATA` is set; otherwise `$XDG_DATA_HOME/claude-plugins/resume-typesetter/` if `XDG_DATA_HOME` is set; otherwise `~/.local/share/claude-plugins/resume-typesetter/`. See the canonical convention in the `claude-rudder:plugin-data-storage` skill.
 
 ## JSON Resume schema — top-level keys
 
